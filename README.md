@@ -7,11 +7,11 @@ It took me less than an hour to code it up, thanks to the fantastic extension su
 Our minified JS file is about 1.5&thinsp;KB and all you need to do to highlight those BibTeX snippets,
 is just load our JS file after `prism.js`.
 
-<center>
-  <img src="screenshot.png" width="640"/>
+<p align="center">
+  <img src="screenshot.png" width="720"/>
   <br>
   See <a href='https://saswatpadhi.github.io/prismjs-bibtex/'>this page</a> for many more live examples.
-</center>
+</p>
 
 
 ## &raquo; Usage

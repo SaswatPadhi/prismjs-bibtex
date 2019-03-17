@@ -26,8 +26,8 @@ In the `head` of you HTML document, you can add the following:
 
 &lt;!-- Import other components and plugins as desired. --&gt;
 
-&lt;!-- Import the `prism-bibtex.js` extension. --&gt;
-&lt;script defer src=&quot;https://raw.github.com/SaswatPadhi/prismjs-bibtex/master/prism-bibtex.min.js&quot;
+&lt;!-- Import the `prism-bibtex.js` extension after saving a local copy. --&gt;
+&lt;script defer src=&quot;prism-bibtex.min.js&quot;
         integrity=&quot;sha256-2a1LJqD82CRe85ZL6FtoWnPe7+lSUcpnZpRmaYAeRrc=&quot; crossorigin=&quot;anonymous&quot;&gt;
 &lt;/script&gt;
 </code></pre>
@@ -196,8 +196,7 @@ Example from <https://tex.stackexchange.com/questions/73293/how-to-use-string-va
         integrity="sha256-QciVGr0G0qBC7iVqTH0zo6B2h4sFTL5iyxA3vO0Mu2M=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/plugins/line-highlight/prism-line-highlight.min.js"
         integrity="sha256-DEl9ZQE+lseY13oqm2+mlUr+sVI18LG813P+kzzIm8o=" crossorigin="anonymous"></script>
-<script src="https://raw.github.com/SaswatPadhi/prismjs-bibtex/master/prism-bibtex.min.js"
-        integrity="sha256-2a1LJqD82CRe85ZL6FtoWnPe7+lSUcpnZpRmaYAeRrc=" crossorigin="anonymous">
+<script src="prism-bibtex.min.js" integrity="sha256-2a1LJqD82CRe85ZL6FtoWnPe7+lSUcpnZpRmaYAeRrc=" crossorigin="anonymous">
 </script>
 
 
