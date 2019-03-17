@@ -8,7 +8,7 @@ Our minified JS file is about 1.5&thinsp;KB and all you need to do to highlight 
 is just load our JS file after `prism.js`.
 
 <p align="center">
-  <img src="screenshot.png" width="720"/>
+  <img src="screenshot.png" width="531"/>
   <br>
   See <a href='https://saswatpadhi.github.io/prismjs-bibtex/'>this page</a> for many more live examples.
 </p>
