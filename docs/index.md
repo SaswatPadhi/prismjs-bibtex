@@ -1,11 +1,13 @@
 [PrismJS] is great! The minified core is less than 6&thinsp;KB, the API is gorgeous,
 and although it uses simple regex matching, it is surprisingly accurate in most cases.
-However, although it officially supports 175 languages currently, there is no support for [BibTeX] &#x1f612;
+However, although it officially supports 175 languages currently, there is no support for [BibTeX] &#x1f612; ...
 
 So here is a BibTeX language extension for PrismJS! &#x1f601;
-It took me less than an hour to code it up, thanks to the fantastic extension support in PrismJS.
-Our minified JS file is about 1.5&thinsp;KB and all you need to do to highlight those BibTeX snippets,
-is just load our JS file after `prism.js`.
+<br>
+Thanks to the fantastic extension support in PrismJS,
+it took me less than an hour and only about 60 lines to write the initial version.
+The minified JS file is less than 1.5&thinsp;KB and all you need to do to highlight those BibTeX snippets,
+is just load it after `prism.js`.
 
 
 
@@ -28,7 +30,7 @@ In the `head` of you HTML document, you can add the following:
 
 &lt;!-- Import the `prism-bibtex.js` extension. --&gt;
 &lt;script defer src=&quot;https://saswatpadhi.github.io/prismjs-bibtex/prism-bibtex.min.js&quot;
-        integrity=&quot;sha256-2a1LJqD82CRe85ZL6FtoWnPe7+lSUcpnZpRmaYAeRrc=&quot; crossorigin=&quot;anonymous&quot;&gt;
+        integrity=&quot;sha256-fGDTNGNhZgaIwZoMiPCbMC2ufG10eUT8UJRYEjgzxck=&quot; crossorigin=&quot;anonymous&quot;&gt;
 &lt;/script&gt;
 </code></pre>
 
@@ -36,7 +38,7 @@ The `defer` attribute delays the script execution (but not download) until the H
 
 
 
-## &raquo; Highlighted Samples
+## &raquo; Some Basic Examples
 
 Below, I show the syntax-highlighting results for some tricky BibTeX files I found on the internet.
 Please report bugs (or, open a PR) if you notice an incorrect highlighting.
@@ -95,22 +97,6 @@ Examples from <https://verbosus.com/bibtex-style-examples.html>:
   note    = {An optional note}, 
   volume  = 4
 }
-
-@conference{conference,
-  author       = {Peter Draper}, 
-  title        = {The title of the work},
-  booktitle    = {The title of the book},
-  year         = 1993,
-  editor       = {The editor},
-  volume       = 4,
-  series       = 5,
-  pages        = 213,
-  address      = {The address of the publisher},
-  month        = 7,
-  organization = {The organization},
-  publisher    = {The publisher},
-  note         = {An optional note}  
-}
 ```
 
 ### Double-Quoted Strings
@@ -166,12 +152,6 @@ Examples from <https://www.overleaf.com/learn/latex/Bibliography_management_with
     year      = "1993",
     publisher = "Addison-Wesley",
     address   = "Reading, Massachusetts"
-}
- 
-@misc{knuthwebsite,
-    author    = "Donald Knuth",
-    title     = "Knuth: Computers and Typesetting",
-    url       = "http://www-cs-faculty.stanford.edu/\~{}uno/abcde.html"
 }
 ```
 
@@ -234,8 +214,18 @@ Example from <https://tex.stackexchange.com/questions/73293/how-to-use-string-va
         integrity="sha256-QciVGr0G0qBC7iVqTH0zo6B2h4sFTL5iyxA3vO0Mu2M=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/plugins/line-highlight/prism-line-highlight.min.js"
         integrity="sha256-DEl9ZQE+lseY13oqm2+mlUr+sVI18LG813P+kzzIm8o=" crossorigin="anonymous"></script>
-<script src="prism-bibtex.min.js" integrity="sha256-2a1LJqD82CRe85ZL6FtoWnPe7+lSUcpnZpRmaYAeRrc=" crossorigin="anonymous">
+<script src="prism-bibtex.min.js" integrity="sha256-fGDTNGNhZgaIwZoMiPCbMC2ufG10eUT8UJRYEjgzxck=" crossorigin="anonymous">
 </script>
+
+
+## &raquo; Large Real-Life Bibliographies
+
+I collected some bibliographies suggested on [this StackExchange post](https://tex.stackexchange.com/questions/16490/the-gold-standard-in-bibtex-databases)
+to stress test my parser.
+
+- The [ACM Turing Awards bibliography](https://saswatpadhi.github.io/prismjs-bibtex/acm-turing-awards.html) (144&thinsp;KB)
+- The [STOC 2010 -- 2019 bibliography](https://saswatpadhi.github.io/prismjs-bibtex/stoc_2010-2019.html) (534&thinsp;KB) that contains abstracts of the papers (with `$...$` math)
+
 
 
 [BibTeX]:   http://www.bibtex.org/

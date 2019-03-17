@@ -1,4 +1,17 @@
+var latex_cmd = /\\(?:[`~@#$%^&()_=+{}\[\]\|\\:;"',\?\/]|[a-z]+\*?(?=\s*{?))/mi;
+var internal_tags = {
+  'equation': {
+    pattern: /(\$\$?)[^\$]+\1/mi,
+    alias: 'function italic',
+    inside: {
+      'tag': latex_cmd
+    }
+  },
+  'tag': latex_cmd
+};
+
 Prism.languages.bib = {
+  'comment': /%.*/,
   'special': {
     pattern: /(^\s*)@(?:(?:preamble|string(?=\s*[({]))|comment(?=\s*[{]))/mi,
     lookbehind: true,
@@ -29,19 +42,17 @@ Prism.languages.bib = {
     lookbehind: true,
     alias: 'keyword'
   },
-  'value': {
-    pattern: /(=\s*){(?:[^{}]*|{(?:[^{}]*|{(?:[^{}]*|{[^}]*})*})*})*}/mi,
-    lookbehind: true,
-    alias: 'string',
-    greedy: true,
-    inside: {
-      'tag': /\\(?:[$"!,;:~]|[a-z_]+(?=\s*{?))/mi,
-    }
-  },
   'number': {
     pattern: /(=\s*)[0-9]+(?=\s*[,}])/mi,
     lookbehind: true,
     alias: 'string'
+  },
+  'value': {
+    pattern: /([=#]\s*){(?:[^{}]*|{(?:[^{}]*|{(?:[^{}]*|{[^}]*})*})*})*}/mi,
+    lookbehind: true,
+    alias: 'string',
+    greedy: true,
+    inside: internal_tags
   },
   'ref-string': {
     pattern: /([=#]\s*)[^,={}'"\s]+(?=\s*[#,}])/mi,
@@ -51,12 +62,9 @@ Prism.languages.bib = {
   'string': {
     pattern: /("|')(?:(?!\1)[^\\]|\\(?:\r\n|[\s\S]))*\1/mi,
     greedy: true,
-    inside: {
-      'tag': /\\(?:[$"!,;:~]|[a-z_]+(?=\s*{?))/mi,
-    }
+    inside: internal_tags
   },
   'symbol': /#/,
-  'comment': /%.*/,
   'punctuation': /[=,{}]/
 };
 Prism.languages.bibtex = Prism.languages.bib;

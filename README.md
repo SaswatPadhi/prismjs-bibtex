@@ -1,17 +1,27 @@
 [PrismJS] is great! The minified core is less than 6&thinsp;KB, the API is gorgeous,
 and although it uses simple regex matching, it is surprisingly accurate in most cases.
-However, although it officially supports 175 languages currently, there is no support for [BibTeX] &#x1f612;
+However, although it officially supports 175 languages currently, there is no support for [BibTeX] &#x1f612; ...
 
 So here is a BibTeX language extension for PrismJS! &#x1f601;
-It took me less than an hour to code it up, thanks to the fantastic extension support in PrismJS.
-Our minified JS file is about 1.5&thinsp;KB and all you need to do to highlight those BibTeX snippets,
-is just load our JS file after `prism.js`.
+<br>
+Thanks to the fantastic extension support in PrismJS,
+it took me less than an hour and only about 60 lines to write the initial version.
+The minified JS file is less than 1.5&thinsp;KB and all you need to do to highlight those BibTeX snippets,
+is just load it after `prism.js`.
+
+
 
 <p align="center">
-  <img src="screenshot.png" width="531"/>
-  <br>
-  See <a href='https://saswatpadhi.github.io/prismjs-bibtex/'>this page</a> for many more live examples.
+  <img src="screenshot.png" width="531"/>  
 </p>
+
+
+
+## &raquo; Examples
+
+- Check out some basic BibTeX examples [on our webpage](https://saswatpadhi.github.io/prismjs-bibtex/)
+- Or, the significantly larger (144&thinsp;KB) [ACM Turing Awards bibliography](https://saswatpadhi.github.io/prismjs-bibtex/acm-turing-awards.html)
+- Or, the even bigger (534&thinsp;KB) [STOC 2010 -- 2019 bibliography](https://saswatpadhi.github.io/prismjs-bibtex/stoc_2010-2019.html) that contains abstracts of the papers (with `$...$` math)
 
 
 
@@ -27,6 +37,12 @@ For example:
 ```
 
 The `defer` attribute delays the script execution (but not download) until the HTML page has been parsed completely.
+
+
+
+## &raquo; Usage with Node
+
+Install the package using `npm install prismjs-biblatex`.
 
 
 
