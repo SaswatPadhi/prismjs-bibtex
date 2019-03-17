@@ -33,7 +33,7 @@ In the `head` of you HTML document, you can add the following:
 <!-- Import other components and plugins as desired. -->
 
 <!-- Import the `prism-bibtex.js` extension. -->
-<script defer src="https://raw.github.com/SaswatPadhi/prismjs-bibtex/master/prism-bibtex.min.js"
+<script defer src="https://saswatpadhi.github.io/prismjs-bibtex/prism-bibtex.min.js"
         integrity="sha256-2a1LJqD82CRe85ZL6FtoWnPe7+lSUcpnZpRmaYAeRrc=" crossorigin="anonymous">
 </script>
 ```

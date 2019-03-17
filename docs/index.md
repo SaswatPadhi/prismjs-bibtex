@@ -26,8 +26,8 @@ In the `head` of you HTML document, you can add the following:
 
 &lt;!-- Import other components and plugins as desired. --&gt;
 
-&lt;!-- Import the `prism-bibtex.js` extension after saving a local copy. --&gt;
-&lt;script defer src=&quot;prism-bibtex.min.js&quot;
+&lt;!-- Import the `prism-bibtex.js` extension. --&gt;
+&lt;script defer src=&quot;https://saswatpadhi.github.io/prismjs-bibtex/prism-bibtex.min.js&quot;
         integrity=&quot;sha256-2a1LJqD82CRe85ZL6FtoWnPe7+lSUcpnZpRmaYAeRrc=&quot; crossorigin=&quot;anonymous&quot;&gt;
 &lt;/script&gt;
 </code></pre>
@@ -40,6 +40,44 @@ The `defer` attribute delays the script execution (but not download) until the H
 
 Below, I show the syntax-highlighting results for some tricky BibTeX files I found on the internet.
 Please report bugs (or, open a PR) if you notice an incorrect highlighting.
+
+### Some snippets from [DBLP]
+
+```bib
+{% raw %}@inproceedings{DBLP:conf/pldi/PadhiSM16,
+  author    = {Saswat Padhi and
+               Rahul Sharma and
+               Todd D. Millstein},
+  title     = {Data-driven precondition inference with learned features},
+  booktitle = {Proceedings of the 37th {ACM} {SIGPLAN} Conference on Programming
+               Language Design and Implementation, {PLDI} 2016, Santa Barbara, CA,
+               USA, June 13-17, 2016},
+  pages     = {42--56},
+  year      = {2016},
+  crossref  = {DBLP:conf/pldi/2016},
+  url       = {https://doi.org/10.1145/2908080.2908099},
+  doi       = {10.1145/2908080.2908099},
+  timestamp = {Tue, 06 Nov 2018 16:59:30 +0100},
+  biburl    = {https://dblp.org/rec/bib/conf/pldi/PadhiSM16},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@proceedings{DBLP:conf/pldi/2016,
+  editor    = {Chandra Krintz and
+               Emery Berger},
+  title     = {Proceedings of the 37th {ACM} {SIGPLAN} Conference on Programming
+               Language Design and Implementation, {PLDI} 2016, Santa Barbara, CA,
+               USA, June 13-17, 2016},
+  publisher = {{ACM}},
+  year      = {2016},
+  url       = {https://doi.org/10.1145/2908080},
+  doi       = {10.1145/2908080},
+  isbn      = {978-1-4503-4261-2},
+  timestamp = {Tue, 06 Nov 2018 16:59:30 +0100},
+  biburl    = {https://dblp.org/rec/bib/conf/pldi/2016},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}{% endraw %}
+```
 
 ### Braces, Integers, No Double-Quoted Strings
 
@@ -96,12 +134,12 @@ YEAR="2100",
 }
 
 @MISC{WEBSITE:1,
-	HOWPUBLISHED = "\url{http://example.com}",
-	AUTHOR = "Intel",
-	TITLE = "Example Website",
-	MONTH = "Dec",
-	YEAR = "1988",
-	NOTE = "Accessed on 2012-11-11"
+  HOWPUBLISHED = "\url{http://example.com}",
+  AUTHOR = "Intel",
+  TITLE = "Example Website",
+  MONTH = "Dec",
+  YEAR = "1988",
+  NOTE = "Accessed on 2012-11-11"
 }
 ```
 
@@ -201,4 +239,5 @@ Example from <https://tex.stackexchange.com/questions/73293/how-to-use-string-va
 
 
 [BibTeX]:   http://www.bibtex.org/
+[DBLP]:     https://dblp.org/
 [prismjs]:  https://prismjs.com/
