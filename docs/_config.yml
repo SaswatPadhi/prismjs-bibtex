@@ -1,0 +1,10 @@
+theme: jekyll-theme-cayman
+
+highlighter: none
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter_opts:
+    disable : true
