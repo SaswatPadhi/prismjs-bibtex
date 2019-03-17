@@ -1,6 +1,5 @@
 theme: jekyll-theme-cayman
 
-highlighter: none
 markdown: kramdown
 
 kramdown:

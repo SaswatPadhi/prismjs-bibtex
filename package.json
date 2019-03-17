@@ -1,0 +1,28 @@
+{
+  "name": "prismjs-bibtex",
+  "version": "1.0.0",
+  "description": "A language definition for BibTeX in the PrismJS syntax-highlighting framework.",
+  "main": "prism-bibtex.js",
+  "dependencies": {
+    "prismjs": "^1.15"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SaswatPadhi/prismjs-bibtex.git"
+  },
+  "keywords": [
+    "prismjs",
+    "bibtex",
+    "syntax",
+    "highlight"
+  ],
+  "author": "Saswat Padhi <saswat.sourav@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SaswatPadhi/prismjs-bibtex/issues"
+  },
+  "homepage": "https://saswatpadhi.github.io/prismjs-bibtex"
+}

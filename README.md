@@ -14,28 +14,16 @@ is just load our JS file after `prism.js`.
 </p>
 
 
-## &raquo; Usage
 
-Using this extension is super simple --- just import the JS file after all the regular Prism files.
-In the `head` of you HTML document, you can add the following:
+## &raquo; Basic Usage
+
+Using this extension is super simple --- just import `prism-bibtex.min.js` in the `head` of your HTML page.
+For example:
 
 ```html
-<!-- Import the desired stylesheet for Prism: (`solarizedlight` theme shown below). -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/themes/prism-solarizedlight.min.css"
-      integrity="sha256-uv4VzRy3z4cpObdkSN+OCocMJpELBaOtNcmCa6Wgyws="
-      rel="stylesheet" crossorigin="anonymous"/>
-
-<!-- Import the main driver file for Prism. -->
-<script defer src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/prism.min.js"
-        integrity="sha256-jc6y1s/Y+F+78EgCT/lI2lyU7ys+PFYrRSJ6q8/R8+o=" crossorigin="anonymous">
-</script>
-
-<!-- Import other components and plugins as desired. -->
-
-<!-- Import the `prism-bibtex.js` extension. -->
-<script defer src="https://saswatpadhi.github.io/prismjs-bibtex/prism-bibtex.min.js"
-        integrity="sha256-2a1LJqD82CRe85ZL6FtoWnPe7+lSUcpnZpRmaYAeRrc=" crossorigin="anonymous">
-</script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/themes/prism-solarizedlight.min.css"/>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/prism.min.js"></script>
+<script defer src="https://saswatpadhi.github.io/prismjs-bibtex/prism-bibtex.min.js"></script>
 ```
 
 The `defer` attribute delays the script execution (but not download) until the HTML page has been parsed completely.
