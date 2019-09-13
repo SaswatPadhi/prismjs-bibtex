@@ -1,6 +1,6 @@
 {
   "name": "prismjs-bibtex",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A language definition for BibTeX in the PrismJS syntax-highlighting framework.",
   "main": "prism-bibtex.js",
   "dependencies": {

@@ -18,14 +18,9 @@ Prism.languages.bib = {
     alias: 'important'
   },
   'type': {
-    pattern: /(^\s*)@(?:article|book|booklet|conference|inbook|incollection|inproceedings|manual|mastersthesis|misc|phdthesis|proceedings|techreport|unpublished)(?=\s*{)/mi,
-    lookbehind: true,
-    alias: 'function bold'
-  },
-  'unk-type': {
     pattern: /(^\s*)@[^,={}'"\s]+(?=\s*{)/mi,
     lookbehind: true,
-    alias: 'function'
+    alias: 'function bold'
   },
   'name': {
     pattern: /([,{]\s*)[^,={}'"\s]+(?=\s*[,}])/mi,
@@ -33,11 +28,6 @@ Prism.languages.bib = {
     alias: 'regex'
   },
   'field': {
-    pattern: /([,{(]\s*)(?:abstract|address|annote|author|booktitle|chapter|contents|copyright|crossref|doi|edition|editor|howpublished|institution|isbn|issn|journal|key|keywords|language|lccn|month|note|number|organization|pages|price|publisher|school|series|title|type|url|volume|year)(?=\s*=)/mi,
-    lookbehind: true,
-    alias: 'keyword italic'
-  },
-  'unk-field': {
     pattern: /([,{(]\s*)[^,={}'"\s]+(?=\s*=)/mi,
     lookbehind: true,
     alias: 'keyword'
@@ -45,12 +35,12 @@ Prism.languages.bib = {
   'number': {
     pattern: /(=\s*)[0-9]+(?=\s*[,}])/mi,
     lookbehind: true,
-    alias: 'string'
+    alias: 'char'
   },
   'value': {
     pattern: /([=#]\s*){(?:[^{}]*|{(?:[^{}]*|{(?:[^{}]*|{[^}]*})*})*})*}/mi,
     lookbehind: true,
-    alias: 'string',
+    alias: 'char',
     greedy: true,
     inside: internal_tags
   },
@@ -59,7 +49,7 @@ Prism.languages.bib = {
     lookbehind: true,
     alias: 'keyword'
   },
-  'string': {
+  'char': {
     pattern: /("|')(?:(?!\1)[^\\]|\\(?:\r\n|[\s\S]))*\1/mi,
     greedy: true,
     inside: internal_tags
