@@ -1,7 +1,7 @@
 ## Bibliography of the ACM Turing Award Lectures
 
-- PrismJS version: 1.17.1
-- PrismJS theme: coy
+- PrismJS version: 1.20.0
+- PrismJS theme: prism (default light theme)
 
 Source: <ftp://ftp.math.utah.edu/pub/tex/bib/acm-turing-awards.bib>
 
@@ -3288,15 +3288,16 @@ Source: <ftp://ftp.math.utah.edu/pub/tex/bib/acm-turing-awards.bib>
 }{% endraw %}
 ```
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism-coy.min.css"
-      integrity="sha512-nD2zNaxvuFpr+AiT6Vo7y57NoZlToYvmx7hxaocCRopZGhLGAuich+Oi07NZAwTD3imS4zQDN1uiG18mJclg6g==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/themes/prism.min.css"
+      integrity="sha512-WERl1x0JzN/zpqp4wEdPaj46VQN53xCySFEtgv+Tl8y52McULwF2pkzBmAH35xJqkDiCmlyeWx0U1khsU10ydw==" crossorigin="anonymous" />
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/prism.min.js"
-        integrity="sha512-kz6zXmnIjbpj0erCwTJNPR96/pLY5s6V9iQkxhoN0hXBQcsMYhU6v/rJOEIOg50PXd6mZuWrz1sN44X0iQkV4A==" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/prism.min.js"
+        integrity="sha512-rYNMWcr8EuYc/6mSBu0wD+hSoA4KkHvYRlmJEJGQI4bsho0OiX8fPOVB822QQZizkTUdkUCnJLnN8SAUBg9y9w==" crossorigin="anonymous">
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/autolinker/prism-autolinker.min.js"
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/autolinker/prism-autolinker.min.js"
         integrity="sha512-/uypNVmpEQdCQLYz3mq7J2HPBpHkkg23FV4i7/WSUyEuTJrWJ2uZ3gXx1IBPUyB3qbIAY+AODbanXLkIar0NBQ==" crossorigin="anonymous">
 </script>
-<script src="prism-bibtex.min.js" crossorigin="anonymous"
-        integrity="sha512-NLQMLdAMbD4pnm85B6xtmYIw6J1z3c6ySiQ+crzr4mik6OhPSJ45x/E4DM00OmqmjtiHJfTDSWt1UPgMN1qxMw==">
+
+<script src="https://cdn.jsdelivr.net/npm/prismjs-bibtex@2.0.1/prism-bibtex.js"
+        integrity="sha256-+dK6uqUp/DnP6ef97s8XcoynBnGe5vM5gvBECH0EB3U=" crossorigin="anonymous">
 </script>

@@ -1,6 +1,6 @@
-### Official BibLaTeX Examples
+### BibLaTeX Examples from CTAN
 
-- PrismJS version: 1.15.0
+- PrismJS version: 1.19.0
 - PrismJS theme: okaidia
 
 Source: <http://mirror.ctan.org/macros/latex/contrib/biblatex/bibtex/bib/biblatex/biblatex-examples.bib>
@@ -1672,15 +1672,16 @@ Source: <http://mirror.ctan.org/macros/latex/contrib/biblatex/bibtex/bib/biblate
 }{% endraw %}
 ```
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/themes/prism-okaidia.min.css"
-      integrity="sha512-2cCUWAsSWMED8EB/hSxAmlp6/P+P6jPF8g6okWQcgjcz1AMW08x9C9H19SOyUfQal6m/1KSc5XJZd+bZ6tljww==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/themes/prism-okaidia.min.css"
+      integrity="sha512-pGi87NmT0VeSbmZBK40y3wF4H2DlpCYc5lrO/3F/RPhnwn262NReW3jFtG2iZWhbpoWT5MDzBzawpOri+jcUTw==" crossorigin="anonymous" />
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/prism.min.js"
-        integrity="sha512-xQgsp+zSrzG4GofAYZbZ2FoEazT92XVX59Vb/mqFv2m3rlwd0YwWAZs7ZRqR4vAyPdpD9mQGKirbgUPV1v/sCw==" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/prism.min.js"
+        integrity="sha512-9ndS8HgVHWQq2A/kpIxygbIZQ7oljc9/AvoEv8SQDy192nAuCGSdk7OdAfCZLDkbRJLZMsrV0NXycMSLLNTWCw==" crossorigin="anonymous">
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/plugins/autolinker/prism-autolinker.min.js"
-        integrity="sha512-HQu1OsOdKbEKghAbU/4xY6rIPovTAoZVSC/JjB/ZsmjUJ1P9G64w25KA+p15EI0PTQovYi2GYHn42mhXSzLDUA==" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/plugins/autolinker/prism-autolinker.min.js"
+        integrity="sha512-/uypNVmpEQdCQLYz3mq7J2HPBpHkkg23FV4i7/WSUyEuTJrWJ2uZ3gXx1IBPUyB3qbIAY+AODbanXLkIar0NBQ==" crossorigin="anonymous">
 </script>
-<script src="prism-bibtex.min.js" crossorigin="anonymous"
-        integrity="sha512-NLQMLdAMbD4pnm85B6xtmYIw6J1z3c6ySiQ+crzr4mik6OhPSJ45x/E4DM00OmqmjtiHJfTDSWt1UPgMN1qxMw==">
+
+<script src="https://cdn.jsdelivr.net/npm/prismjs-bibtex@2.0.1/prism-bibtex.js"
+        integrity="sha256-+dK6uqUp/DnP6ef97s8XcoynBnGe5vM5gvBECH0EB3U=" crossorigin="anonymous">
 </script>

@@ -1,6 +1,9 @@
 PrismJS-BibTeX
-<a href="https://www.npmjs.com/package/prismjs-bibtex"><img align="right" alt="npm" src="https://img.shields.io/npm/v/prismjs-bibtex?logo=npm&style=for-the-badge"></a><img align="right" alt="npm bundle minified size" src="https://img.shields.io/bundlephobia/min/prismjs-bibtex?label=minified&logo=javascript&style=for-the-badge">
 ========
+
+[![npm package](https://img.shields.io/npm/v/prismjs-bibtex?logo=npm&style=for-the-badge)](https://www.npmjs.com/package/prismjs-bibtex)
+![minified size](https://img.shields.io/bundlephobia/min/prismjs-bibtex?label=minified&logo=javascript&style=for-the-badge)
+<a href="https://libraries.io/npm/prismjs-bibtex"><img alt="libraries.io dependency status" align="right" src="https://img.shields.io/librariesio/release/npm/prismjs-bibtex?style=for-the-badge"></a> <a href="https://snyk.io/advisor/npm-package/prismjs-bibtex"><img alt="snyk vulnerabilities" align="right" src="https://img.shields.io/snyk/vulnerabilities/npm/prismjs-bibtex?style=for-the-badge"></a>
 
 A [BibTeX] language extension for [PrismJS].
 
@@ -15,15 +18,26 @@ A [BibTeX] language extension for [PrismJS].
 Simply import the `prism-bibtex.min.js` (recommended at the end of `body`):
 
 ```html
-<script src="https://saswatpadhi.github.io/prismjs-bibtex/docs/prism-bibtex.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs-bibtex@2.0.1/prism-bibtex.min.js">
+</script>
 ```
 
-Remember to import the PrismJS stylesheets and scripts _before_ importing this extension. For example:
+I recommend using the [SRI (Subresource Integrity)][SRI] hash as well:
+```html
+<script src="https://cdn.jsdelivr.net/npm/prismjs-bibtex@2.0.1/prism-bibtex.js"
+        integrity="sha256-+dK6uqUp/DnP6ef97s8XcoynBnGe5vM5gvBECH0EB3U="
+        crossorigin="anonymous">
+</script>
+```
+
+Remember to import the PrismJS stylesheets and scripts **before** importing this extension. For example:
 
 ```html
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism-solarizedlight.min.css"/>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script>
-<script src="https://saswatpadhi.github.io/prismjs-bibtex/docs/prism-bibtex.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs-bibtex@2.0.1/prism-bibtex.min.js">
+</script>
 ```
 
 ### In NodeJS
@@ -45,9 +59,10 @@ Remember to import the PrismJS stylesheets and scripts _before_ importing this e
 
 ## Examples
 
-- Check out some small BibTeX examples [on the project webpage](https://saswatpadhi.github.io/prismjs-bibtex/)
-- Or, the significantly larger (144&thinsp;KB) [ACM Turing Awards bibliography](https://saswatpadhi.github.io/prismjs-bibtex/acm-turing-awards.html)
-- Or, the even bigger (534&thinsp;KB) [STOC 2010 -- 2019 bibliography](https://saswatpadhi.github.io/prismjs-bibtex/stoc_2010-2019.html) that includes abstracts for the papers (with `$...$` inline math in some cases)
+Check out some small BibTeX examples [on the project webpage](https://saswatpadhi.github.io/prismjs-bibtex/). You can also check the performance on large real-life `.bib` files below:
+- (~68&thinsp;KB) [Some BibTeX examples from CTAN](https://saswatpadhi.github.io/prismjs-bibtex/biblatex-examples.html)
+- (~144&thinsp;KB) [Bibliography of ACM Turing Award lectures](https://saswatpadhi.github.io/prismjs-bibtex/acm-turing-awards.html)
+- (~534&thinsp;KB) [STOC 2010 -- 2019 bibliography](https://saswatpadhi.github.io/prismjs-bibtex/stoc_2010-2019.html)
 
 
 
@@ -55,3 +70,4 @@ Remember to import the PrismJS stylesheets and scripts _before_ importing this e
 
 [BibTeX]:   http://www.bibtex.org/
 [prismjs]:  https://prismjs.com/
+[SRI]:      https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity

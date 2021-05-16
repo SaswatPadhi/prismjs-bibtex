@@ -10,33 +10,32 @@ The gziped+minified JS file is ~400&thinsp;bytes and you simply need to load it 
 
 
 
-## &raquo; Usage
+## Usage
 
 Simply import the extension after the Prism scripts and stylesheets.
 For example, in the `head` of you HTML document, you can add the following:
 
-<pre class='language-html' data-line='13-16'><code>&lt;!-- Import the desired stylesheet for Prism: (`solarizedlight` theme shown below). --&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/themes/prism-solarizedlight.min.css&quot; /&gt;
+<pre class='language-html' data-line='10-14'><code>&lt;!-- Import the desired stylesheet for Prism: (`solarizedlight` theme shown below). --&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism-solarizedlight.min.css&quot; /&gt;
 
 &lt;!-- Import the main Prism script. --&gt;
-&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/prism.min.js&quot;&gt;
+&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js&quot;&gt;
 &lt;/script&gt;
 
-&lt;!-- Import other components and plugins as desired. --&gt;
+&lt;!-- Import other components and plugins as desired, e.g. autolinker. --&gt;
 
 &lt;!-- Import the `prism-bibtex.js` extension. --&gt;
-&lt;script src=&quot;https://saswatpadhi.github.io/prismjs-bibtex/docs/prism-bibtex.min.js&quot;&gt;
+&lt;script src=&quot;https://cdn.jsdelivr.net/npm/prismjs-bibtex@2.0.1/prism-bibtex.js&quot;
+        integrity=&quot;sha256-+dK6uqUp/DnP6ef97s8XcoynBnGe5vM5gvBECH0EB3U=&quot; crossorigin=&quot;anonymous&quot;&gt;
 &lt;/script&gt;
 </code></pre>
 
-
-
-## &raquo; Some Basic Examples
+## Small Examples
 
 Below, I show the syntax-highlighting results for some tricky BibTeX files I found on the internet.
 Please report bugs (or, open a PR) if you notice an incorrect highlighting.
 
-### Some snippets from [DBLP]
+### Snippets from [DBLP]
 
 ```bib
 {% raw %}@inproceedings{DBLP:conf/pldi/PadhiSM16,
@@ -74,7 +73,7 @@ Please report bugs (or, open a PR) if you notice an incorrect highlighting.
 }{% endraw %}
 ```
 
-### Braces, Integers, No Double-Quoted Strings
+### Braces, Integers, No Quoted Strings
 
 Examples from <https://verbosus.com/bibtex-style-examples.html>:
 
@@ -196,34 +195,38 @@ Example from <https://tex.stackexchange.com/questions/73293/how-to-use-string-va
 }{% endraw %}
 ```
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/themes/prism-solarizedlight.min.css"
-      integrity="sha512-Vy5HEYgHKrCbVXD+O0e3cx/MCZpe8hEUA3KeF63QblnYWcDAJ9cgjUhAY85rNpum8r9yEr6mm+e7JtQ5g6MMng==" crossorigin="anonymous" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/line-highlight/prism-line-highlight.min.css"
-      integrity="sha512-KV0SmmPQ6Jf7vKYmasM66XkZIEyp+Q6GiMhH/Qok31YsUiSwE2lq28DIleLzDkQY+QePWdhI73g/C9gIzPZ0RQ==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism-solarizedlight.min.css"
+      integrity="sha512-fibfhB71IpdEKqLKXP/96WuX1cTMmvZioYp7T6I+lTbvJrrjEGeyYdAf09GHpFptF8toQ32woGZ8bw9+HjZc0A==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/plugins/autolinker/prism-autolinker.min.css"
+      integrity="sha512-4ZmAB2UXPu3Rgy5ZClpqnJ/zXXZBdulFXY1eWMLgIjp2HWgkHGIpr1b7kmCK+rdD5NYfivTp47UR+bQ4oTBllQ==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/plugins/line-highlight/prism-line-highlight.min.css"
+      integrity="sha512-nXlJLUeqPMp1Q3+Bd8Qds8tXeRVQscMscwysJm821C++9w6WtsFbJjPenZ8cQVMXyqSAismveQJc0C1splFDCA==" crossorigin="anonymous" />
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/prism.min.js"
-        integrity="sha512-rYNMWcr8EuYc/6mSBu0wD+hSoA4KkHvYRlmJEJGQI4bsho0OiX8fPOVB822QQZizkTUdkUCnJLnN8SAUBg9y9w==" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"
+        integrity="sha512-YBk7HhgDZvBxmtOfUdvX0z8IH2d10Hp3aEygaMNhtF8fSOvBZ16D/1bXZTJV6ndk/L/DlXxYStP8jrF77v2MIg==" crossorigin="anonymous">
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/components/prism-markup.min.js"
-        integrity="sha512-UBNbEQNZ6DQ6nAsYq09Sted4S3MMDGGMnZliP3H1ZxDhYq9MpEUFA7c2UWCiymRz5cakVOzs1inynIUhozX0lQ==" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/plugins/keep-markup/prism-keep-markup.min.js"
+        integrity="sha512-LC5nQYpThDWO3xsegzq9t+OQTcedwKX9ruWEaRsFS5xB1VfTWpOyIBHukVwxJPlNdLVA/Yy31OArNxs7SBrG8g==" crossorigin="anonymous">
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/autolinker/prism-autolinker.min.js"
-    integrity="sha512-/uypNVmpEQdCQLYz3mq7J2HPBpHkkg23FV4i7/WSUyEuTJrWJ2uZ3gXx1IBPUyB3qbIAY+AODbanXLkIar0NBQ==" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/plugins/autolinker/prism-autolinker.min.js"
+        integrity="sha512-/uypNVmpEQdCQLYz3mq7J2HPBpHkkg23FV4i7/WSUyEuTJrWJ2uZ3gXx1IBPUyB3qbIAY+AODbanXLkIar0NBQ==" crossorigin="anonymous">
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/line-highlight/prism-line-highlight.min.js"
-        integrity="sha512-0q+Zo1DGkBd+0e8VwqijsenJztcSHqD1LIIqGoei7A/fmUEpo/uhmrbvvWreQyQqMy0+yP+Craq9C0cTdm5QoA==" crossorigin="anonymous">
-</script>
-<script src="prism-bibtex.min.js" crossorigin="anonymous"
-        integrity="sha512-NLQMLdAMbD4pnm85B6xtmYIw6J1z3c6ySiQ+crzr4mik6OhPSJ45x/E4DM00OmqmjtiHJfTDSWt1UPgMN1qxMw==">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/plugins/line-highlight/prism-line-highlight.min.js"
+        integrity="sha512-MGMi0fbhnsk/a/9vCluWv3P4IOfHijjupSoVYEdke+QQyGBOAaXNXnwW6/IZSH7JLdknDf6FL6b57o+vnMg3Iw==" crossorigin="anonymous">
 </script>
 
-## &raquo; Large Real-Life Bibliographies
+<script src="https://cdn.jsdelivr.net/npm/prismjs-bibtex@2.0.1/prism-bibtex.js"
+        integrity="sha256-+dK6uqUp/DnP6ef97s8XcoynBnGe5vM5gvBECH0EB3U=" crossorigin="anonymous">
+</script>
 
-I collected some bibliographies suggested on [this StackExchange post](https://tex.stackexchange.com/questions/16490/the-gold-standard-in-bibtex-databases)
-to stress test my parser.
+## Large Real-Life Bibliographies
 
-- The [ACM Turing Awards bibliography](https://saswatpadhi.github.io/prismjs-bibtex/acm-turing-awards.html) (144&thinsp;KB)
-- The [STOC 2010 -- 2019 bibliography](https://saswatpadhi.github.io/prismjs-bibtex/stoc_2010-2019.html) (534&thinsp;KB) that contains abstracts of the papers (with `$...$` math)
+- (~68&thinsp;KB) [Some BibTeX examples from CTAN](https://saswatpadhi.github.io/prismjs-bibtex/biblatex-examples.html)<br>
+  Curated from [this StackExchange post](https://tex.stackexchange.com/questions/16490/the-gold-standard-in-bibtex-databases) to check for some edge cases.
+- (~144&thinsp;KB) [Bibliography of ACM Turing Award lectures](https://saswatpadhi.github.io/prismjs-bibtex/acm-turing-awards.html) <br>
+  includes notes for some entries (with LaTeX macros in some cases)
+- (~534&thinsp;KB) [STOC 2010 -- 2019 bibliography](https://saswatpadhi.github.io/prismjs-bibtex/stoc_2010-2019.html)<br>
+  includes abstracts for some entries (with `$...$` inline math in some cases)
 
 
 

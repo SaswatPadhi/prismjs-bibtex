@@ -1,10 +1,10 @@
 {
   "name": "prismjs-bibtex",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "A language definition for BibTeX in the PrismJS syntax-highlighting framework.",
   "main": "prism-bibtex.js",
   "dependencies": {
-    "prismjs": "^1.15"
+    "prismjs": "^1.19"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
