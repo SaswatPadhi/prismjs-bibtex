@@ -12,6 +12,23 @@ No changes
 
 <hr>
 
+## [2.0.0] - 2021-05-16
+### Fixed
+- Minor fixes to regex patterns for `macro` (previously `tag`) and `special` token types.
+### Changed
+- Updated the regex pattern for `string` (previously `value`) token type
+  to subsume the regex patterns for `number` and `char` token types.
+- Token types and aliases are more intuitive and meaningful now.
+### Removed
+- Removed `number` and `char` token types -- they are both part of the `string` token type now.
+  Previously `string` was changed to `char` to prevent autolinking, but autolinking within strings
+  appears to work correctly in majority of the cases.
+  It only rarely fails when latex macros appear within strings.
+### Added
+- The extension now adheres to [IIFE style], which is now enforced in PrismJS (see PrismJS/prism#2867).
+
+<hr>
+
 ## [1.1.0] - 2019-09-13
 ### Fixed
 - Compatibility with `autolinker` plugin -- disabled autolinking except within comments.
@@ -29,4 +46,7 @@ No changes
 
 [Unreleased]: https://github.com/SaswatPadhi/prismjs-bibtex/compare/v1.0.0...HEAD
 [1.0.0]: https://github.com/SaswatPadhi/prismjs-bibtex/releases/tag/v1.0.0
-[1.0.0]: https://github.com/SaswatPadhi/prismjs-bibtex/releases/tag/v1.1.0
+[1.1.0]: https://github.com/SaswatPadhi/prismjs-bibtex/releases/tag/v1.1.0
+[2.0.0]: https://github.com/SaswatPadhi/prismjs-bibtex/releases/tag/v2.0.0
+
+[IIFE style]: https://developer.mozilla.org/en-US/docs/Glossary/IIFE

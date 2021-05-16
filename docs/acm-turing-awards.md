@@ -1,5 +1,8 @@
 ## Bibliography of the ACM Turing Award Lectures
 
+- PrismJS version: 1.17.1
+- PrismJS theme: coy
+
 Source: <ftp://ftp.math.utah.edu/pub/tex/bib/acm-turing-awards.bib>
 
 ```bib
@@ -3285,15 +3288,15 @@ Source: <ftp://ftp.math.utah.edu/pub/tex/bib/acm-turing-awards.bib>
 }{% endraw %}
 ```
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism-solarizedlight.min.css"
-      integrity="sha256-3cT9py3J5XXzJkB9HvDuXrIgL+db6zf7BF2F+TBYdoo=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism-coy.min.css"
+      integrity="sha512-nD2zNaxvuFpr+AiT6Vo7y57NoZlToYvmx7hxaocCRopZGhLGAuich+Oi07NZAwTD3imS4zQDN1uiG18mJclg6g==" crossorigin="anonymous" />
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/prism.min.js"
-        integrity="sha256-HWJnMZHGx7U1jmNfxe4yaQedmpo/mtxWSIXvcJkLIf4=" crossorigin="anonymous">
+        integrity="sha512-kz6zXmnIjbpj0erCwTJNPR96/pLY5s6V9iQkxhoN0hXBQcsMYhU6v/rJOEIOg50PXd6mZuWrz1sN44X0iQkV4A==" crossorigin="anonymous">
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/autolinker/prism-autolinker.min.js"
-        integrity="sha256-Qfxn8KLcPNmSqfiY/b9HKceQvP0g9EXwiDHDCcgfC2k=" crossorigin="anonymous">
+        integrity="sha512-/uypNVmpEQdCQLYz3mq7J2HPBpHkkg23FV4i7/WSUyEuTJrWJ2uZ3gXx1IBPUyB3qbIAY+AODbanXLkIar0NBQ==" crossorigin="anonymous">
 </script>
 <script src="prism-bibtex.min.js" crossorigin="anonymous"
-        integrity="sha256-LdLe3QDoMjP5ed5hKliTe+/DmOChPYalAAjUNS+j2Lg=">
+        integrity="sha512-NLQMLdAMbD4pnm85B6xtmYIw6J1z3c6ySiQ+crzr4mik6OhPSJ45x/E4DM00OmqmjtiHJfTDSWt1UPgMN1qxMw==">
 </script>

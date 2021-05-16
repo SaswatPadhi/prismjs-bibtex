@@ -1,5 +1,8 @@
 ### Official BibLaTeX Examples
 
+- PrismJS version: 1.15.0
+- PrismJS theme: okaidia
+
 Source: <http://mirror.ctan.org/macros/latex/contrib/biblatex/bibtex/bib/biblatex/biblatex-examples.bib>
 
 ```bib
@@ -1669,15 +1672,15 @@ Source: <http://mirror.ctan.org/macros/latex/contrib/biblatex/bibtex/bib/biblate
 }{% endraw %}
 ```
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism-solarizedlight.min.css"
-      integrity="sha256-3cT9py3J5XXzJkB9HvDuXrIgL+db6zf7BF2F+TBYdoo=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/themes/prism-okaidia.min.css"
+      integrity="sha512-2cCUWAsSWMED8EB/hSxAmlp6/P+P6jPF8g6okWQcgjcz1AMW08x9C9H19SOyUfQal6m/1KSc5XJZd+bZ6tljww==" crossorigin="anonymous" />
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/prism.min.js"
-        integrity="sha256-HWJnMZHGx7U1jmNfxe4yaQedmpo/mtxWSIXvcJkLIf4=" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/prism.min.js"
+        integrity="sha512-xQgsp+zSrzG4GofAYZbZ2FoEazT92XVX59Vb/mqFv2m3rlwd0YwWAZs7ZRqR4vAyPdpD9mQGKirbgUPV1v/sCw==" crossorigin="anonymous">
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/autolinker/prism-autolinker.min.js"
-        integrity="sha256-Qfxn8KLcPNmSqfiY/b9HKceQvP0g9EXwiDHDCcgfC2k=" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/plugins/autolinker/prism-autolinker.min.js"
+        integrity="sha512-HQu1OsOdKbEKghAbU/4xY6rIPovTAoZVSC/JjB/ZsmjUJ1P9G64w25KA+p15EI0PTQovYi2GYHn42mhXSzLDUA==" crossorigin="anonymous">
 </script>
 <script src="prism-bibtex.min.js" crossorigin="anonymous"
-        integrity="sha256-LdLe3QDoMjP5ed5hKliTe+/DmOChPYalAAjUNS+j2Lg=">
+        integrity="sha512-NLQMLdAMbD4pnm85B6xtmYIw6J1z3c6ySiQ+crzr4mik6OhPSJ45x/E4DM00OmqmjtiHJfTDSWt1UPgMN1qxMw==">
 </script>

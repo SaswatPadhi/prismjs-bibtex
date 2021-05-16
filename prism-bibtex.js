@@ -1,60 +1,54 @@
-var latex_cmd = /\\(?:[`~@#$%^&()_=+{}\[\]\|\\:;"',\?\/]|[a-z]+\*?(?=\s*{?))/mi;
-var internal_tags = {
-  'equation': {
-    pattern: /(\$\$?)[^\$]+\1/mi,
-    alias: 'function italic',
-    inside: {
-      'tag': latex_cmd
-    }
-  },
-  'tag': latex_cmd
-};
+(function (Prism) {
+  var macro = {
+    pattern: /\\(?:\W|[a-z]+\*?(?=\s*{?))/mi,
+    alias: 'keyword'
+  }
 
-Prism.languages.bib = {
-  'comment': /%.*/,
-  'special': {
-    pattern: /(^\s*)@(?:(?:preamble|string(?=\s*[({]))|comment(?=\s*[{]))/mi,
-    lookbehind: true,
-    alias: 'important'
-  },
-  'type': {
-    pattern: /(^\s*)@[^,={}'"\s]+(?=\s*{)/mi,
-    lookbehind: true,
-    alias: 'function bold'
-  },
-  'name': {
-    pattern: /([,{]\s*)[^,={}'"\s]+(?=\s*[,}])/mi,
-    lookbehind: true,
-    alias: 'regex'
-  },
-  'field': {
-    pattern: /([,{(]\s*)[^,={}'"\s]+(?=\s*=)/mi,
-    lookbehind: true,
-    alias: 'keyword'
-  },
-  'number': {
-    pattern: /(=\s*)[0-9]+(?=\s*[,}])/mi,
-    lookbehind: true,
-    alias: 'char'
-  },
-  'value': {
-    pattern: /([=#]\s*){(?:[^{}]*|{(?:[^{}]*|{(?:[^{}]*|{[^}]*})*})*})*}/mi,
-    lookbehind: true,
-    alias: 'char',
-    greedy: true,
-    inside: internal_tags
-  },
-  'ref-string': {
-    pattern: /([=#]\s*)[^,={}'"\s]+(?=\s*[#,}])/mi,
-    lookbehind: true,
-    alias: 'keyword'
-  },
-  'char': {
-    pattern: /("|')(?:(?!\1)[^\\]|\\(?:\r\n|[\s\S]))*\1/mi,
-    greedy: true,
-    inside: internal_tags
-  },
-  'symbol': /#/,
-  'punctuation': /[=,{}]/
-};
-Prism.languages.bibtex = Prism.languages.bib;
+  var latex = {
+    'equation': {
+      pattern: /(\$\$?)[^\$]+\1/mi,
+      alias: 'function',
+      inside: {
+        'macro': macro
+      }
+    },
+    'macro': macro
+  };
+
+  Prism.languages.bib = {
+    'comment': /%.*/,
+    'special': {
+      pattern: /(^\s*)@(?:preamble|string|comment(?=\s*[({]))/mi,
+      lookbehind: true,
+      alias: 'important'
+    },
+    'class-name': {
+      pattern: /(^\s*)@[a-z]+(?=\s*{)/mi,
+      lookbehind: true
+    },
+    'key': {
+      pattern: /([,{]\s*)[^,={}'"\s]+(?=\s*[,}])/mi,
+      lookbehind: true,
+      alias: 'regex'
+    },
+    'property': {
+      pattern: /([,{(]\s*)[^,={}'"\s]+(?=\s*=)/mi,
+      lookbehind: true
+    },
+    'string': {
+      /* properly quoted strings | numbers | content with braces balanced up to depth 4 */
+      pattern: /([=#{]\s*)("|')(?:(?!\2)[^\\]|\\\W|\\[a-z]+)*\2|([=#]\s*)(?:\d+|{(?:[^{}]*|{(?:[^{}]*|{(?:[^{}]*|{[^}]*})*})*})*})/mi,
+      lookbehind: true,
+      greedy: true,
+      inside: latex
+    },
+    'constant': {
+      pattern: /([=#]\s*)[^,={}'"\s]+(?=\s*[#,}])/mi,
+      lookbehind: true
+    },
+    'symbol': /#/,
+    'punctuation': /[=,{}()]/
+  };
+
+  Prism.languages.bibtex = Prism.languages.bib;
+}(Prism));

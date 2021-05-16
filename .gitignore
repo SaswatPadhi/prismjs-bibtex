@@ -2,3 +2,4 @@ _site
 .sass-cache
 
 docs/.bundle
+node_modules

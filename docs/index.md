@@ -1,35 +1,31 @@
-[PrismJS] is great! The minified core is less than ~5&thinsp;KB, the API is gorgeous,
+[PrismJS] is great! The gziped+minified core is ~6&thinsp;KB, the API is gorgeous,
 and although it uses simple regex matching, it is surprisingly accurate in most cases.
 However, although it officially supports 175 languages currently, there is no support for [BibTeX] &#x1f612; ...
 
-So here is a BibTeX language extension for PrismJS!
+So, here is a BibTeX language extension for PrismJS!
 <br>
 Thanks to the fantastic extension support in PrismJS,
 it took me less than an hour and only about 60 lines to write the initial version.
-The minified JS file is less than 1&thinsp;KB and all you need to do to highlight those BibTeX snippets, is just load it after `prism.js`.
+The gziped+minified JS file is ~400&thinsp;bytes and you simply need to load it after `prism.js`.
 
 
 
 ## &raquo; Usage
 
-Using this extension is super simple --- just import the JS file after all the regular Prism files.
-In the `head` of you HTML document, you can add the following:
+Simply import the extension after the Prism scripts and stylesheets.
+For example, in the `head` of you HTML document, you can add the following:
 
 <pre class='language-html' data-line='13-16'><code>&lt;!-- Import the desired stylesheet for Prism: (`solarizedlight` theme shown below). --&gt;
-&lt;link href=&quot;https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism-solarizedlight.min.css&quot;
-      integrity=&quot;sha256-3cT9py3J5XXzJkB9HvDuXrIgL+db6zf7BF2F+TBYdoo=&quot;
-      rel=&quot;stylesheet&quot; crossorigin=&quot;anonymous&quot;/&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/themes/prism-solarizedlight.min.css&quot; /&gt;
 
-&lt;!-- Import the main driver file for Prism. --&gt;
-&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/prism.min.js&quot;
-        integrity=&quot;sha256-HWJnMZHGx7U1jmNfxe4yaQedmpo/mtxWSIXvcJkLIf4=&quot; crossorigin=&quot;anonymous&quot;&gt;
+&lt;!-- Import the main Prism script. --&gt;
+&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/prism.min.js&quot;&gt;
 &lt;/script&gt;
 
 &lt;!-- Import other components and plugins as desired. --&gt;
 
 &lt;!-- Import the `prism-bibtex.js` extension. --&gt;
-&lt;script src=&quot;https://saswatpadhi.github.io/prismjs-bibtex/prism-bibtex.min.js&quot;
-        integrity=&quot;sha256-LdLe3QDoMjP5ed5hKliTe+/DmOChPYalAAjUNS+j2Lg=&quot; crossorigin=&quot;anonymous&quot;&gt;
+&lt;script src=&quot;https://saswatpadhi.github.io/prismjs-bibtex/docs/prism-bibtex.min.js&quot;&gt;
 &lt;/script&gt;
 </code></pre>
 
@@ -200,25 +196,25 @@ Example from <https://tex.stackexchange.com/questions/73293/how-to-use-string-va
 }{% endraw %}
 ```
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism-solarizedlight.min.css"
-      integrity="sha256-3cT9py3J5XXzJkB9HvDuXrIgL+db6zf7BF2F+TBYdoo=" crossorigin="anonymous" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/line-highlight/prism-line-highlight.min.css"
-      integrity="sha256-FFGTaA49ZxFi2oUiWjxtTBqoda+t1Uw8GffYkdt9aco=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/themes/prism-solarizedlight.min.css"
+      integrity="sha512-Vy5HEYgHKrCbVXD+O0e3cx/MCZpe8hEUA3KeF63QblnYWcDAJ9cgjUhAY85rNpum8r9yEr6mm+e7JtQ5g6MMng==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/line-highlight/prism-line-highlight.min.css"
+      integrity="sha512-KV0SmmPQ6Jf7vKYmasM66XkZIEyp+Q6GiMhH/Qok31YsUiSwE2lq28DIleLzDkQY+QePWdhI73g/C9gIzPZ0RQ==" crossorigin="anonymous" />
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/prism.min.js"
-        integrity="sha256-HWJnMZHGx7U1jmNfxe4yaQedmpo/mtxWSIXvcJkLIf4=" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/prism.min.js"
+        integrity="sha512-rYNMWcr8EuYc/6mSBu0wD+hSoA4KkHvYRlmJEJGQI4bsho0OiX8fPOVB822QQZizkTUdkUCnJLnN8SAUBg9y9w==" crossorigin="anonymous">
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/components/prism-markup.min.js"
-        integrity="sha256-8nT1E50WC5TDeb3+USsFEXN5ZGgLdmwZ6RS5KT71Wjs=" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/components/prism-markup.min.js"
+        integrity="sha512-UBNbEQNZ6DQ6nAsYq09Sted4S3MMDGGMnZliP3H1ZxDhYq9MpEUFA7c2UWCiymRz5cakVOzs1inynIUhozX0lQ==" crossorigin="anonymous">
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/autolinker/prism-autolinker.min.js"
-        integrity="sha256-Qfxn8KLcPNmSqfiY/b9HKceQvP0g9EXwiDHDCcgfC2k=" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/autolinker/prism-autolinker.min.js"
+    integrity="sha512-/uypNVmpEQdCQLYz3mq7J2HPBpHkkg23FV4i7/WSUyEuTJrWJ2uZ3gXx1IBPUyB3qbIAY+AODbanXLkIar0NBQ==" crossorigin="anonymous">
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/line-highlight/prism-line-highlight.min.js"
-        integrity="sha256-i1I0MEGBEKKEtBLlagkEPdef5OGDQEUdcjCPYo47a3Y=" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/line-highlight/prism-line-highlight.min.js"
+        integrity="sha512-0q+Zo1DGkBd+0e8VwqijsenJztcSHqD1LIIqGoei7A/fmUEpo/uhmrbvvWreQyQqMy0+yP+Craq9C0cTdm5QoA==" crossorigin="anonymous">
 </script>
 <script src="prism-bibtex.min.js" crossorigin="anonymous"
-        integrity="sha256-LdLe3QDoMjP5ed5hKliTe+/DmOChPYalAAjUNS+j2Lg=">
+        integrity="sha512-NLQMLdAMbD4pnm85B6xtmYIw6J1z3c6ySiQ+crzr4mik6OhPSJ45x/E4DM00OmqmjtiHJfTDSWt1UPgMN1qxMw==">
 </script>
 
 ## &raquo; Large Real-Life Bibliographies
