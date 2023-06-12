@@ -224,8 +224,9 @@ Example from <https://tex.stackexchange.com/questions/73293/how-to-use-string-va
         crossorigin="anonymous" referrerpolicy="no-referrer">
 </script>
 
-<script src="https://cdn.jsdelivr.net/npm/prismjs-bibtex@2.0.1/prism-bibtex.js"
-        integrity="sha256-+dK6uqUp/DnP6ef97s8XcoynBnGe5vM5gvBECH0EB3U=" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/prismjs-bibtex@2.1.0/prism-bibtex.js"
+        integrity="sha256-A5GMUmGHpY8mVpfcaRLQFeHtmdjZLumKBOMpf81FXX0="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
 </script>
 
 ## Large Real-Life Bibliographies

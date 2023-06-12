@@ -18,25 +18,26 @@ A [BibTeX] language extension for [PrismJS].
 Simply import the `prism-bibtex.min.js` (recommended at the end of `body`):
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/prismjs-bibtex@2.0.1/prism-bibtex.min.js">
+<script src="https://cdn.jsdelivr.net/npm/prismjs-bibtex@2.1.0/prism-bibtex.min.js">
 </script>
 ```
 
 I recommend using the [SRI (Subresource Integrity)][SRI] hash as well:
 ```html
-<script src="https://cdn.jsdelivr.net/npm/prismjs-bibtex@2.0.1/prism-bibtex.js"
-        integrity="sha256-+dK6uqUp/DnP6ef97s8XcoynBnGe5vM5gvBECH0EB3U="
-        crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/prismjs-bibtex@2.1.0/prism-bibtex.js"
+        integrity="sha256-A5GMUmGHpY8mVpfcaRLQFeHtmdjZLumKBOMpf81FXX0="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
 </script>
 ```
 
-Remember to import the PrismJS stylesheets and scripts **before** importing this extension. For example:
+Remember to import the PrismJS stylesheets and scripts **before** importing this extension.
+For example:
 
 ```html
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism-solarizedlight.min.css"/>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-solarizedlight.min.css"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js">
 </script>
-<script src="https://cdn.jsdelivr.net/npm/prismjs-bibtex@2.0.1/prism-bibtex.min.js">
+<script src="https://cdn.jsdelivr.net/npm/prismjs-bibtex@2.1.0/prism-bibtex.min.js">
 </script>
 ```
 

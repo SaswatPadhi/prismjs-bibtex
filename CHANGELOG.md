@@ -10,6 +10,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 No changes
 
+## [2.1.0] - 2023-06-11
+
+### Fixed
+- Resolved an infinite loop bug reported in #3
+- Fixed an issue with `=` sign being subsumed into the field value `string` match.
+### Changed
+- Renamed `macro` token type to the standard `keyword type,
+  which it was earlier aliased to.
+### Removed
+- `docs/prismjs-bibtex.min.js` has been removed; please use from jsDeliver.
+
+
 <hr>
 
 ## [2.0.1] - 2021-05-16
@@ -19,7 +31,7 @@ No changes
   so the minimum version is now raised to 1.19.
 - Updated usage instructions.
   - Getting the versioned-JS files from jsDelivr is recommended now.
-  - `prismjs-bibtex.min.js` is kept only for websites that already use it.
+  - `docs/prismjs-bibtex.min.js` is kept only for websites that already use it.
 
 <hr>
 
@@ -58,10 +70,12 @@ No changes
 
 
 
-[Unreleased]: https://github.com/SaswatPadhi/prismjs-bibtex/compare/v1.0.0...HEAD
 [1.0.0]: https://github.com/SaswatPadhi/prismjs-bibtex/releases/tag/v1.0.0
 [1.1.0]: https://github.com/SaswatPadhi/prismjs-bibtex/releases/tag/v1.1.0
 [2.0.0]: https://github.com/SaswatPadhi/prismjs-bibtex/releases/tag/v2.0.0
 [2.0.1]: https://github.com/SaswatPadhi/prismjs-bibtex/releases/tag/v2.0.1
+[2.1.0]: https://github.com/SaswatPadhi/prismjs-bibtex/releases/tag/v2.1.0
+
+[Unreleased]: https://github.com/SaswatPadhi/prismjs-bibtex/compare/v2.1.0...HEAD
 
 [IIFE style]: https://developer.mozilla.org/en-US/docs/Glossary/IIFE
