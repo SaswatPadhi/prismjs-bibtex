@@ -33,8 +33,8 @@
       lookbehind: true
     },
     'string': {
-      /* properly quoted strings | numbers | content with braces balanced up to depth 4 */
-      pattern: /([=#{]\s*)("|')(?:(?!\2)[^\\]|\\\W|\\[a-z]+)*\2|([=#]\s*)(?:\d+|{(?:[^{}]*|{(?:[^{}]*|{(?:[^{}]*|{[^}]*})*})*})*})/mi,
+      /* numbers | properly quoted strings | content with braces balanced up to depth 4 */
+      pattern: /([=#{}]\s*)(?:\d+|("|')(?:(?!\2)[^\\]|\\.)*\2|{(?:(?:{(?:(?:{(?:(?:{(?:[^{}])*})|(?:[^{}]))*})|(?:[^{}]))*})|(?:[^{}]))*})/mi,
       lookbehind: true,
       greedy: true,
       inside: latex
