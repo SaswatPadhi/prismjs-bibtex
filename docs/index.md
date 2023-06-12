@@ -33,7 +33,9 @@ For example, in the `head` of you HTML document, you can add the following:
 ## Small Examples
 
 Below, I show the syntax-highlighting results for some tricky BibTeX files I found on the internet.
+
 Please report bugs (or, open a PR) if you notice an incorrect highlighting.
+You may find some examples of currently broken / unsupported features on [this page](broken.html).
 
 ### Snippets from [DBLP]
 
