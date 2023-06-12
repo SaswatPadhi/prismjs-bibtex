@@ -1,18 +1,15 @@
 (function (Prism) {
-  var macro = {
-    pattern: /\\(?:\W|[a-z]+\*?(?=\s*{?))/mi,
-    alias: 'keyword'
+  var keyword = {
+    pattern: /\\(?:\ |[^a-z@\s]|[a-z@]+\*?)/i
   }
 
   var latex = {
     'equation': {
-      pattern: /(\$\$?)[^\$]+\1/mi,
+      pattern: /(\$\$?)[^\$]+\1/m,
       alias: 'function',
-      inside: {
-        'macro': macro
-      }
+      inside: keyword
     },
-    'macro': macro
+    'keyword': keyword
   };
 
   Prism.languages.bib = {
