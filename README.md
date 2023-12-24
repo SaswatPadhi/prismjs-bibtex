@@ -3,7 +3,6 @@ PrismJS-BibTeX
 
 [![npm package](https://img.shields.io/npm/v/prismjs-bibtex?logo=npm&style=for-the-badge)](https://www.npmjs.com/package/prismjs-bibtex)
 [![jsDelivr hits](https://img.shields.io/jsdelivr/npm/hm/prismjs-bibtex?color=gold&logo=javascript&style=for-the-badge)](https://www.jsdelivr.com/package/npm/prismjs-bibtex)
-<a href="https://libraries.io/npm/prismjs-bibtex"><img alt="libraries.io dependency status" align="right" src="https://img.shields.io/librariesio/release/npm/prismjs-bibtex?style=for-the-badge"></a> <a href="https://snyk.io/advisor/npm-package/prismjs-bibtex"><img alt="snyk vulnerabilities" align="right" src="https://img.shields.io/snyk/vulnerabilities/npm/prismjs-bibtex?style=for-the-badge"></a>
 
 A [BibTeX] language extension for [PrismJS].
 
